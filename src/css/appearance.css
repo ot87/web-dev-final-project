@@ -1,0 +1,23 @@
+header {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  text-align: center;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
+}
+.nav-link-active {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  text-align: center;
+}
