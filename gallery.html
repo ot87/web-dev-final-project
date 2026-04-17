@@ -38,15 +38,20 @@
         <section>
           <h3>Your Next Favorite</h3>
           <div>
-            <label for="search-input">Search</label>
-            <input
-              type="text"
-              id="search-input"
-              placeholder="Name, Vibe, or Neighbourhood"
-            />
-            <button type="button" id="clear-search">Clear</button>
+            <div>
+              <label for="search-input">Search</label>
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Name, Vibe, or Neighbourhood"
+              />
+              <button type="button" id="clear-search">Clear</button>
+            </div>
+            <div id="weather-info">
+              <p>Loading weather data...</p>
+            </div>
           </div>
-          <div class="gallery"></div>
+          <div id="gallery"></div>
         </section>
       </div>
     </main>
@@ -60,5 +65,8 @@
 
     <script src="./src/js/data.js"></script>
     <script src="./src/js/index.js"></script>
+    <script src="./src/api/weather-endpoint.js"></script>
+    <script src="./src/js/weather-codes.js"></script>
+    <script src="./src/js/weather.js"></script>
   </body>
 </html>
