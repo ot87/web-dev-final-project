@@ -1,4 +1,4 @@
-const galleryContainer = document.querySelector(".gallery");
+const galleryContainer = document.querySelector("#gallery");
 
 function renderGallery(gallery) {
   let galleryHtml = "";
@@ -47,11 +47,9 @@ document
   .querySelector("#search-input")
   .addEventListener("keyup", filterGallery);
 
-document
-  .querySelector("#clear-search")
-  .addEventListener("click", () => {
-    document.querySelector("#search-input").value = "";
-    renderGallery(data);
-  });
+document.querySelector("#clear-search").addEventListener("click", () => {
+  document.querySelector("#search-input").value = "";
+  renderGallery(data);
+});
 
 renderGallery(data);
