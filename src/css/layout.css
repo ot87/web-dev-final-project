@@ -11,11 +11,11 @@ main {
   max-width: 1200px;
   height: 100%;
   margin: 0 auto;
-  padding: 28px;
+  padding: 16px;
 }
 
 header .container {
-  padding: 36px;
+  padding: 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -35,4 +35,122 @@ nav ul li {
 
 footer {
   padding: 12px;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.gallery-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.search-input {
+  padding: 8px;
+}
+.button {
+  padding: 8px 16px;
+}
+.gallery-card-cover {
+  display: grid;
+}
+.gallery-card-cover figure,
+span {
+  grid-row: 1;
+  grid-column: 1;
+}
+.rating {
+  margin: 12px;
+  padding: 8px;
+}
+.gallery-image {
+  max-width: 100%;
+  min-width: 0;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.gallery-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+}
+.gallery-card-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+}
+.gallery-feature-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.feature {
+  padding: 6px;
+}
+
+@media (min-width: 480px) {
+  header .container {
+    padding: 24px;
+  }
+  .container {
+    padding: 24px;
+  }
+  .section {
+    padding: 24px;
+  }
+  .gallery {
+    gap: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  header .container {
+    padding: 40px;
+  }
+
+  .container {
+    padding: 40px;
+  }
+
+  .section {
+    padding: 36px;
+    gap: 24px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  .gallery-card-content {
+    gap: 8px;
+    padding: 20px;
+  }
+  .gallery-card-bottom {
+    padding: 20px;
+  }
 }

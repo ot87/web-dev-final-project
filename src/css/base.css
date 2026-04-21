@@ -7,6 +7,13 @@
   --background-color: #fafafa;
   --success-color: #27ae60;
   --error-color: #e74c3c;
+  --feature-wifi-color: green;
+  --feature-quiet-color: teal;
+  --feature-cozy-color: blue;
+  --feature-outlets-color: purple;
+  --feature-dog-friendly-color: orange;
+  --feature-coffee-and-beer-color: brown;
+  --feature-spacious-color: magenta;
 }
 
 * {
