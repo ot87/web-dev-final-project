@@ -4,7 +4,7 @@ async function loadWeather() {
 
   if (weatherData === null || !weatherData.current) {
     weatherContainer.innerHTML =
-      "<p>Failed to load weather data.</p><button id='retry-weather'>Retry</button>";
+      "<p class='text-cursive accent-color'>Failed to load weather data</p><button id='retry-weather' class='button'>Retry</button>";
     document
       .querySelector("#retry-weather")
       .addEventListener("click", loadWeather);
@@ -27,10 +27,12 @@ async function loadWeather() {
   };
 
   weatherContainer.innerHTML = `
-    <span>${new Date(time).toLocaleString("en-CA", dateOptions)}</span>
-    <span>${temperature_2m}°C</span>
-    <span>${windspeed_10m} km/h</span>
-    <span>${weatherIcon} ${weatherLabel}</span>`;
+    <span class="text-cursive accent-color">${new Date(time).toLocaleString("en-CA", dateOptions)}</span>
+    <div class="flex-wrap">
+      <span class="primary-color">🌡️ ${temperature_2m}°C</span>
+      <span class="primary-color">💨 ${windspeed_10m} km/h</span>
+      <span class="primary-color">${weatherIcon} ${weatherLabel}</span>
+    </div>`;
 }
 
 document.addEventListener("DOMContentLoaded", loadWeather);

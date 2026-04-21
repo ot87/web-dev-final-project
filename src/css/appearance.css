@@ -21,3 +21,119 @@ footer {
   color: var(--light-text);
   text-align: center;
 }
+
+.primary-color {
+  color: var(--primary-color);
+}
+.accent-color {
+  color: var(--accent-color);
+}
+
+.section {
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px var(--primary-color);
+}
+.search-input {
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px var(--primary-color);
+}
+.button {
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px var(--accent-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+.button:active {
+  translate: 1px 1px;
+}
+
+.gallery-card {
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--primary-color);
+}
+.rating {
+  width: min-content;
+  height: min-content;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 40%);
+  border: 2px solid var(--accent-color);
+  color: var(--light-text);
+  border-radius: 4px;
+}
+.feature {
+  border-radius: 4px;
+}
+.feature-wifi {
+  background-color: color-mix(
+    in srgb,
+    var(--feature-wifi-color),
+    transparent 70%
+  );
+  border: 2px solid var(--feature-wifi-color);
+  color: var(--feature-wifi-color);
+  box-shadow: 0 1px 2px var(--feature-wifi-color);
+}
+.feature-quiet {
+  background-color: color-mix(
+    in srgb,
+    var(--feature-quiet-color),
+    transparent 70%
+  );
+  border: 2px solid var(--feature-quiet-color);
+  color: var(--feature-quiet-color);
+  box-shadow: 0 1px 2px var(--feature-quiet-color);
+}
+.feature-cozy {
+  background-color: color-mix(
+    in srgb,
+    var(--feature-cozy-color),
+    transparent 70%
+  );
+  border: 2px solid var(--feature-cozy-color);
+  color: var(--feature-cozy-color);
+  box-shadow: 0 1px 2px var(--feature-cozy-color);
+}
+.feature-outlets {
+  background-color: color-mix(
+    in srgb,
+    var(--feature-outlets-color),
+    transparent 70%
+  );
+  border: 2px solid var(--feature-outlets-color);
+  color: var(--feature-outlets-color);
+  box-shadow: 0 1px 2px var(--feature-outlets-color);
+}
+.feature-dog-friendly {
+  background-color: color-mix(
+    in srgb,
+    var(--feature-dog-friendly-color),
+    transparent 70%
+  );
+  border: 2px solid var(--feature-dog-friendly-color);
+  color: var(--feature-dog-friendly-color);
+  box-shadow: 0 1px 2px var(--feature-dog-friendly-color);
+}
+.feature-coffee-and-beer {
+  background-color: color-mix(
+    in srgb,
+    var(--feature-coffee-and-beer-color),
+    transparent 70%
+  );
+  border: 2px solid var(--feature-coffee-and-beer-color);
+  color: var(--feature-coffee-and-beer-color);
+  box-shadow: 0 1px 2px var(--feature-coffee-and-beer-color);
+}
+.feature-spacious {
+  background-color: color-mix(
+    in srgb,
+    var(--feature-spacious-color),
+    transparent 70%
+  );
+  border: 2px solid var(--feature-spacious-color);
+  color: var(--feature-spacious-color);
+  box-shadow: 0 1px 2px var(--feature-spacious-color);
+}

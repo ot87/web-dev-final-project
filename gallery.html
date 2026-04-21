@@ -18,7 +18,7 @@
   <body>
     <header>
       <div class="container">
-        <h1><i class="title-lg">Remote Work Café Finder</i></h1>
+        <h1><i class="title-xl accent-color">Remote Work Café Finder</i></h1>
         <nav>
           <ul>
             <li><a href="./index.html" class="nav-link text-lg">Home</a></li>
@@ -34,24 +34,33 @@
     </header>
     <main>
       <div class="container">
-        <h2>Café Gallery | Find Your Perfect Remote Work Vibe</h2>
-        <section>
-          <h3>Your Next Favorite</h3>
-          <div>
-            <div>
-              <label for="search-input">Search</label>
-              <input
-                type="text"
-                id="search-input"
-                placeholder="Name, Vibe, or Neighbourhood"
-              />
-              <button type="button" id="clear-search">Clear</button>
+        <h2 class="title-lg accent-color">
+          Café Gallery | Find Your Perfect Remote Work Vibe
+        </h2>
+        <section class="section">
+          <h3 class="title-md primary-color">Pick Your Next Favorite</h3>
+          <div class="gallery-controls">
+            <div class="flex-wrap">
+              <label for="search-input" class="text-cursive accent-color">
+                Search
+              </label>
+              <div class="flex-wrap">
+                <input
+                  type="text"
+                  id="search-input"
+                  class="search-input"
+                  placeholder="Name, Vibe, or Neighbourhood"
+                />
+                <button type="button" id="clear-search" class="button">
+                  Clear
+                </button>
+              </div>
             </div>
-            <div id="weather-info">
-              <p>Loading weather data...</p>
+            <div id="weather-info" class="flex-wrap">
+              <p class="text-cursive accent-color">Loading weather data...</p>
             </div>
           </div>
-          <div id="gallery"></div>
+          <div id="gallery" class="gallery"></div>
         </section>
       </div>
     </main>

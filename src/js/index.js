@@ -5,22 +5,27 @@ function renderGallery(gallery) {
 
   gallery.forEach((item) => {
     galleryHtml += `
-      <article>
-        <div>
+      <article class="gallery-card">
+        <div class="gallery-card-cover">
           <figure>
             <img
               src="/assets/${item.image.src}"
               alt="${item.image.alt}"
+              class="gallery-image"
             />
           </figure>
-          <span>Rating: ${item.rating}</span>
+          <span class="rating">⭐ ${item.rating}</span>
         </div>
-        <h4>${item.name}</h4>
-        <p>Vibe: ${item.vibe}</p>
-        <p>Features: ${item.features.join(", ")}</p>
-        <p>Neighbourhood: ${item.neighbourhood}</p>
-        <p>Location: ${item.address}</p>
-        <a href="${item.mapUrl}" target="_blank">View On Map</a>
+        <div class="gallery-card-content">
+          <h4 class="title-sm">${item.name}</h4>
+          <p><span class="text-cursive accent-color">Vibe:</span> ${item.vibe}</p>
+          <p><span class="text-cursive accent-color">Neighbourhood:</span> ${item.neighbourhood}</p>
+          <p><span class="text-cursive accent-color">Location:</span> ${item.address}</p>
+        </div>
+        <div class="gallery-card-bottom">
+          <div class="gallery-feature-container">${item.features.map((feature) => `<span class="text-sm feature feature-${feature.replace(/\s+/g, "-").toLowerCase()}">${feature}</span>`).join("")}</div>
+          <a href="${item.mapUrl}" class="button" target="_blank">View On Map</a>
+        </div>
       </article>`;
   });
 
