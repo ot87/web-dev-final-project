@@ -37,6 +37,55 @@
     <main>
       <div class="container">
         <h2>Suggest a Café | Share Your Favorite</h2>
+        <section class="section">
+          <h3 class="title-md primary-color">Add Your Local Gem</h3>
+          <form id="cafe-form" class="form">
+            <div class="form-group">
+              <label for="cafe-name" class="text-cursive accent-color">
+                Café Name
+              </label>
+              <input type="text" id="cafe-name" name="cafeName" required />
+            </div>
+            <div class="form-group">
+              <label for="cafe-location" class="text-cursive accent-color">
+                Location
+              </label>
+              <input
+                type="text"
+                id="cafe-location"
+                name="cafeLocation"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="cafe-vibe" class="text-cursive accent-color">
+                Vibe
+              </label>
+              <textarea
+                id="cafe-vibe"
+                name="cafeVibe"
+                placeholder="Describe the Vibe of the café..."
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="cafe-notes" class="text-cursive accent-color">
+                Features
+              </label>
+              <select id="cafe-notes" name="cafeNotes" multiple>
+                <option value="wifi">Wi-Fi</option>
+                <option value="quiet">Quiet Atmosphere</option>
+                <option value="cozy">Cozy Environment</option>
+                <option value="outlets">Power Outlets</option>
+                <option value="dog-friendly">Dog Friendly</option>
+                <option value="coffee-and-beer">Coffee and Beer</option>
+                <option value="spacious">Spacious</option>
+              </select>
+            </div>
+            <button type="submit" class="button">Submit</button>
+            <button type="reset" class="button">Reset</button>
+          </form>
+        </section>
       </div>
     </main>
     <footer>
