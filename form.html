@@ -38,13 +38,21 @@
       <div class="container">
         <h2>Suggest a Café | Share Your Favorite</h2>
         <section class="section">
-          <h3 class="title-md primary-color">Add Your Local Gem</h3>
-          <form id="cafe-form" class="form">
+          <div>
+            <h3 class="title-md primary-color">Add Your Local Gem</h3>
+            <p id="success-message"></p>
+          </div>
+          <form id="cafe-form" class="form" novalidate>
             <div class="form-group">
               <label for="cafe-name" class="text-cursive accent-color">
                 Café Name
               </label>
               <input type="text" id="cafe-name" name="cafeName" required />
+              <div
+                class="form-error"
+                id="cafe-name-error"
+                aria-live="polite"
+              ></div>
             </div>
             <div class="form-group">
               <label for="cafe-location" class="text-cursive accent-color">
@@ -56,6 +64,11 @@
                 name="cafeLocation"
                 required
               />
+              <div
+                class="form-error"
+                id="cafe-location-error"
+                aria-live="polite"
+              ></div>
             </div>
             <div class="form-group">
               <label for="cafe-vibe" class="text-cursive accent-color">
@@ -67,12 +80,17 @@
                 placeholder="Describe the Vibe of the café..."
                 required
               ></textarea>
+              <div
+                class="form-error"
+                id="cafe-vibe-error"
+                aria-live="polite"
+              ></div>
             </div>
             <div class="form-group">
-              <label for="cafe-notes" class="text-cursive accent-color">
+              <label for="cafe-features" class="text-cursive accent-color">
                 Features
               </label>
-              <select id="cafe-notes" name="cafeNotes" multiple>
+              <select id="cafe-features" name="cafeFeatures" multiple>
                 <option value="wifi">Wi-Fi</option>
                 <option value="quiet">Quiet Atmosphere</option>
                 <option value="cozy">Cozy Environment</option>
@@ -81,6 +99,11 @@
                 <option value="coffee-and-beer">Coffee and Beer</option>
                 <option value="spacious">Spacious</option>
               </select>
+              <div
+                class="form-error"
+                id="cafe-features-error"
+                aria-live="polite"
+              ></div>
             </div>
             <button type="submit" class="button">Submit</button>
             <button type="reset" class="button">Reset</button>
@@ -96,6 +119,7 @@
       </p>
     </footer>
 
+    <script src="./src/js/form-validation.js"></script>
     <script src="./src/js/index.js"></script>
   </body>
 </html>
