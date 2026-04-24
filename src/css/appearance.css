@@ -28,22 +28,26 @@ footer {
 .accent-color {
   color: var(--accent-color);
 }
+.text-field {
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: var(--field-background-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px var(--primary-color);
+}
 
 .section {
   border: 2px solid var(--primary-color);
   border-radius: 20px;
   box-shadow: 0 4px 8px var(--primary-color);
 }
-.search-input {
-  border: 1px solid var(--primary-color);
-  border-radius: 4px;
-  box-shadow: 0 1px 2px var(--primary-color);
-}
 .button {
   color: var(--accent-color);
   border: 2px solid var(--accent-color);
   border-radius: 4px;
   box-shadow: 0 2px 4px var(--accent-color);
+  font-size: 0.875rem;
   font-weight: bold;
   cursor: pointer;
 }
@@ -136,4 +140,44 @@ footer {
   border: 2px solid var(--feature-spacious-color);
   color: var(--feature-spacious-color);
   box-shadow: 0 1px 2px var(--feature-spacious-color);
+}
+
+#cafe-form label {
+  font-weight: bold;
+}
+#cafe-features option:checked {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+#cafe-features option:hover {
+  color: var(--light-text);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  font-weight: bold;
+  border-radius: 8px;
+}
+#cafe-features option::checkmark {
+  color: var(--accent-color);
+  font-weight: 900;
+}
+
+.success-message {
+  color: var(--success-color);
+  background-color: color-mix(in srgb, var(--success-color), transparent 80%);
+  border-radius: 12px;
+  font-weight: bold;
+}
+.form-error {
+  color: var(--error-color);
+  background-color: color-mix(in srgb, var(--error-color), transparent 80%);
+  border-radius: 8px;
+  font-size: 0.875rem;
+}
+.form-error::before {
+  content: "⚠ ";
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 1rem;
+  }
 }
