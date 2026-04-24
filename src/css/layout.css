@@ -1,6 +1,8 @@
 body {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 main {
@@ -53,6 +55,30 @@ footer {
   padding: 8px;
 }
 
+.hero-ticker {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+.ticker-track {
+  display: flex;
+  gap: 12px;
+  animation: ticker-scroll 30s linear infinite;
+  will-change: transform;
+}
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -60,15 +86,6 @@ footer {
   gap: 16px;
   padding: 16px;
   margin-bottom: 16px;
-}
-.ticker-track {
-  display: flex;
-}
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
 }
 
 .section {
