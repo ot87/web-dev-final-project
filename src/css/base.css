@@ -5,6 +5,7 @@
   --dark-text: #1a1a1a;
   --light-text: #ffffff;
   --background-color: #fafafa;
+  --field-background-color: #ffffff;
   --success-color: #27ae60;
   --error-color: #e74c3c;
   --feature-wifi-color: green;
@@ -38,6 +39,10 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+select,
+::picker(select) {
+  appearance: base-select;
 }
 
 html {
