@@ -23,7 +23,7 @@ Remote Work Café Finder
 | **JavaScript (Vanilla)** | No build tools or frameworks required — demonstrates core DOM manipulation and event handling             |
 | **Open-Meteo API**       | Free, no API key required for weather data — eliminates authentication complexity                         |
 
-### Challenges & Solutions
+## Challenges & Solutions
 
 Creating a seamless infinite scroll for the hero ticker proved challenging because CSS percentage-based animations reference the container's width, not the content's width. It was solved by adding width: `max-content` to the track element and adjusting the animation to scroll exactly 50% (one complete set of images) before looping back.
 
