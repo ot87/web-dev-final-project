@@ -65,7 +65,8 @@ footer {
 .ticker-track {
   display: flex;
   gap: 12px;
-  animation: ticker-scroll 30s linear infinite;
+  width: max-content;
+  animation: ticker-scroll 120s linear infinite;
   will-change: transform;
 }
 .ticker-track:hover {
@@ -193,6 +194,9 @@ span {
     padding: 24px;
     margin-bottom: 24px;
   }
+  .ticker-track {
+    animation: ticker-scroll 90s linear infinite;
+  }
   .section {
     padding: 24px;
   }
@@ -228,6 +232,9 @@ span {
     gap: 32px;
     padding: 32px;
     margin-bottom: 32px;
+  }
+  .ticker-track {
+    animation: ticker-scroll 60s linear infinite;
   }
 
   .gallery {

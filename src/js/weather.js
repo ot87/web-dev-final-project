@@ -4,7 +4,7 @@ async function loadWeather() {
 
   if (weatherData === null || !weatherData.current) {
     weatherContainer.innerHTML =
-      "<p class='text-cursive accent-color'>Failed to load weather data</p><button id='retry-weather' class='button'>Retry</button>";
+      "<p class='text-cursive accent-color'>Failed to load weather data</p><button id='retry-weather' class='button button-secondary'>Retry</button>";
     document
       .querySelector("#retry-weather")
       .addEventListener("click", loadWeather);
