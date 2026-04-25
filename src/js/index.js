@@ -24,7 +24,7 @@ function renderGallery(gallery) {
         </div>
         <div class="gallery-card-bottom">
           <div class="gallery-feature-container">${item.features.map((feature) => `<span class="text-sm feature feature-${feature.replace(/\s+/g, "-").toLowerCase()}">${feature}</span>`).join("")}</div>
-          <a href="${item.mapUrl}" class="button" target="_blank">View On Map</a>
+          <a href="${item.mapUrl}" class="button button-primary" target="_blank">View On Map</a>
         </div>
       </article>`;
   });
